@@ -1437,6 +1437,34 @@ textarea.form-input::-webkit-resizer {
  * responsive larger than 450px screen
  */
 
+@media (min-width: 280px) {
+  #icon {
+    position: absolute;
+    top: -19px;
+    right: 19px;
+    margin: 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 6px;
+  }
+}
+
+/**
+ * responsive larger than 320px screen
+ */
+
+@media (min-width: 320px) {
+  #icon {
+    position: absolute;
+    top: -19px;
+    right: 19px;
+    margin: 5px;
+    height: 17px;
+    width: 17px;
+    border-radius: 7px;
+  }
+}
+
 @media (min-width: 450px) {
   /**
    * client

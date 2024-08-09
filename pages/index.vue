@@ -3,21 +3,21 @@ import PageTitle from "~/components/base/heading/PageTitle";
 useHead({
   title: ''
 });
+
 useSeoMeta({
-  title: 'Shauryam Dubey Portfolio',
-  ogTitle: 'Shauryam Portfolio',
-  description: 'Hi',
-  ogDescription: 'This is my amazing site, let me tell you all about it.',
+  title: 'Shauryam Dubey | Software Developer',
+  ogTitle: 'Shauryam Dubey Portfolio',
+  description: 'Welcome to Shauryam Dubey’s portfolio. Explore my work, projects, and experience as a software developer.',
+  ogDescription: 'Discover the professional journey of Shauryam Dubey, a software developer with expertise in various modern technologies.',
   ogImage: '/images/profile.png',
   twitterCard: 'summary_large_image',
-  ogType: 'website'
 });
 
 const title = "About Me";
-const skillSectionTitle = "My Skills";
+const skill    ctionTitle = "My Skills";
 const resumeLink = "https://drive.google.com/file/d/1fv39Xpu_opciibwmx8Po9mOim2Ah_B_v/view?usp=sharing";
 const aboutMe = [
-  "Hi, I'm Shauryam Dubey, a passionate software developer with a diverse skill set spanning multiple programming languages and technologies. With hands-on experience in TypeScript, JavaScript, Python, Java, Go, I thrive in dynamic environments where innovation and problem-solving are key.",
+  "Hi, I'm Shauryam Dubey, a passionate software developer with a diverse skill set spanning multiple programming languages and technologies. With ha;nds-on experience in TypeScript, JavaScript, Python, Java, Go, I thrive in dynamic environments where innovation and problem-solving are key.",
   "My professional journey includes a recent R&D internship at BMC Software, where I developed a voice-activated chatbot and automated testing processes, enhancing user interaction and efficiency. As a Frontend Developer at Bili Consultancy, I optimized website performance and collaborated closely with teams to deliver high-quality user experiences.",
   "Feel free to connect with me on &nbsp;<a href='https://github.com/lordvader501' target='_blank'>GitHub</a>&nbsp; or &nbsp;<a href='https://linkedin.com/in/shauryamdubey' target='_blank'>LinkedIn</a>."
 ];
