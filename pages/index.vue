@@ -14,7 +14,7 @@ useSeoMeta({
 });
 
 const title = "About Me";
-const skill    ctionTitle = "My Skills";
+const skillSectionTitle = "My Skills";
 const resumeLink = "https://drive.google.com/file/d/1fv39Xpu_opciibwmx8Po9mOim2Ah_B_v/view?usp=sharing";
 const aboutMe = [
   "Hi, I'm Shauryam Dubey, a passionate software developer with a diverse skill set spanning multiple programming languages and technologies. With ha;nds-on experience in TypeScript, JavaScript, Python, Java, Go, I thrive in dynamic environments where innovation and problem-solving are key.",
