@@ -1,6 +1,27 @@
 <script setup>
 let isOpen = ref(false);
 
+const color = useColorMode();
+
+let isdark = ref(false);
+
+onMounted(() => {
+  if (document.body.classList.contains("dark-theme")) {
+    isdark.value = true;
+    return;
+  }
+  isdark.value = false;
+});
+
+function changeProfile(dark) {
+  if (dark) {
+    isdark.value = true;
+    return;
+  }
+  isdark.value = false;
+};
+
+
 function toggleMenu() {
   isOpen = !isOpen;
 }
@@ -10,7 +31,13 @@ function toggleMenu() {
   <aside class="sidebar" :class="{ active: isOpen }">
     <div class="sidebar-info">
       <figure class="avatar-box" style="overflow: hidden;">
-        <NuxtImg src="/images/profile.png" alt="Shauryam Dubey" width="80" preload />
+        <NuxtImg v-if="isdark" src="/images/profile.png"
+          alt="Shauryam Dubey"
+          width="80" preload />
+        <NuxtImg v-else src="/images/profile-white.png"
+          alt="Shauryam Dubey"
+          width="80" preload />
+
       </figure>
 
       <div class="info-content">
@@ -22,6 +49,7 @@ function toggleMenu() {
           <span class="xl:after:content-['']">Software Developer</span>
         </p>
       </div>
+      <DarkModeToggle :changeProfile="changeProfile" />
 
       <button class="info_more-btn" @click="isOpen = !isOpen">
         <span>Show Contacts</span>

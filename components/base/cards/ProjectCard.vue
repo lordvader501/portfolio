@@ -23,7 +23,7 @@
 
       <h3 class="project-title">{{ project.title }}</h3>
       <div class="flex flex-wrap justify-start ml-1 mt-1">
-        <span class="mx-1 mt-1 mb-0.5 text-[10px] border rounded-full px-1.5 flex items-center justify-center" style="color: var(--vegas-gold); border-color: var(--vegas-gold); line-height: 16px;" v-for="(skill, index) in project.skills" :key="index">{{skill}}</span>
+        <span class="mx-1 mt-1 mb-0.5 text-[10px] border rounded-full px-1.5 flex items-center justify-center" style="color: var(--vegas-gold); border-color: var(--vegas-gold); line-height: 15px;" v-for="(skill, index) in project.skills" :key="index">{{skill}}</span>
       </div>
       <!-- <p class="line-clamp-2 project-category">{{ project.info }}</p> -->
 

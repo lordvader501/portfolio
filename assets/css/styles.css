@@ -6,53 +6,83 @@
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
-    to bottom right,
-    hsl(240, 1%, 25%) 3%,
-    hsl(0, 0%, 19%) 97%
+    /* avatar box */ to bottom right,
+    hsl(249, 33%, 78%),
+    hsl(250, 45%, 71%)
   );
   --bg-gradient-jet: linear-gradient(
-      to bottom right,
-      hsla(240, 1%, 18%, 0.251) 0%,
-      hsla(240, 2%, 11%, 0) 100%
-    ),
-    hsl(240, 2%, 13%);
+    /* what I'm doing */ to bottom right,
+    hsla(253, 33%, 89%, 0.945),
+    hsl(249, 24%, 83%)
+  );
   --bg-gradient-yellow-1: linear-gradient(
-    to bottom right,
-    hsl(45, 100%, 71%) 0%,
-    hsla(36, 100%, 69%, 0) 50%
+    /* apparently idk */ to bottom right,
+    hsl(283, 71%, 86%),
+    hsla(277, 57%, 78%, 0.546)
   );
   --bg-gradient-yellow-2: linear-gradient(
-      135deg,
-      hsla(45, 100%, 71%, 0.251) 0%,
-      hsla(35, 100%, 68%, 0) 59.86%
-    ),
-    hsl(240, 2%, 13%);
+    /* effect before hover */ 135deg,
+    hsla(278, 30%, 85%, 0.712) 0%,
+    hsl(250, 22%, 78%)
+  );
   --border-gradient-onyx: linear-gradient(
-    to bottom right,
-    hsl(0, 0%, 25%) 0%,
-    hsla(0, 0%, 25%, 0) 50%
+    /* shadow behind widgets */ to bottom right,
+    hsla(255, 6%, 62%, 0.727) 0%,
+    hsl(249, 28%, 82%) hsla(255, 6%, 62%, 0.727) 0%,
+    hsl(249, 28%, 82%)
   );
   --text-gradient-yellow: linear-gradient(
-    to right,
-    hsl(45, 100%, 72%),
-    hsl(35, 100%, 68%)
+    /* resume graph line and add on lines */ to right,
+    hsla(251, 36%, 63%, 0.866),
+    hsla(250, 65%, 63%, 0.866)
+  );
+  --smoky-black: linear-gradient(
+    /* card bg bg */ to bottom,
+    hsl(252, 25%, 88%),
+    hsla(249, 36%, 68%, 0.92) hsla(251, 36%, 63%, 0.866),
+    hsla(250, 65%, 63%, 0.866)
+  );
+  --smoky-black: linear-gradient(
+    /* card bg bg */ to bottom,
+    hsl(252, 25%, 88%),
+    hsla(249, 36%, 68%, 0.92)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(210, 11%, 15%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(37, 90%, 51%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
-  --text-gradient-yellow: hsl(37, 90%, 51%);
+  --jet: hsl(0, 2%, 61%); /* card border */
+  --onyx: hsla(250, 65%, 63%, 0.866); /* data science bg */
+  --eerie-black-1: hsl(250, 33%, 86%); /* widget bg */
+  --eerie-black-2: #ffffff; /* card bg */
+  --jet: hsl(0, 2%, 61%); /* card border */
+  --onyx: hsla(250, 65%, 63%, 0.866); /* data science bg */
+  --eerie-black-1: hsl(250, 33%, 86%); /* widget bg */
+  --eerie-black-2: #ffffff; /* card bg */
+  --white-1: hsl(0, 0%, 100%); /* data science txt */
+  --white-2: hsl(0, 0%, 0%); /* THE TITLE */
+  --orange-yellow-crayola: hsl(
+    0,
+    0%,
+    0%
+  ); /* widget color and show contact txt */
+  --orange-yellow-crayola1: hsl(249, 88%, 87%); /* navbar word highlight */
+  --vegas-gold: hsla(255, 64%, 61%, 0.951); /* resume year*/
+  --orange-yellow-crayola: hsl(
+    0,
+    0%,
+    0%
+  ); /* widget color and show contact txt */
+  --orange-yellow-crayola1: hsl(249, 88%, 87%); /* navbar word highlight */
+  --vegas-gold: hsla(255, 64%, 61%, 0.951); /* resume year*/
+  --light-gray: hsl(0, 4%, 17%); /* general and navbar text*/
+  --gray-tone: hsla(240, 2%, 44%, 0.866); /* navbar bg */
+  --light-gray-70: hsla(255, 46%, 59%, 0.951); /* TITLES in show contact */
+  --gray-tone: hsl(240deg 100% 88.39% / 67%); /* navbar bg */
+  --light-gray-70: hsla(255, 46%, 59%, 0.951); /* TITLES in show contact */
+  --light-gray-71: hsla(0, 0%, 84%, 0.7); /* hover effect */
+  --bittersweet-shimmer: hsl(0, 43%, 51%); /* invalid */
+  --toggle: rgb(108, 72, 171); /* toggle color */
+  --purple: #6c48ab; /* service icon */
 
   /**
    * typography
@@ -93,6 +123,78 @@
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
+
+  /**
+   * filter
+   */
+
+  --grayscale: none;
+  --blur: none;
+}
+.dark-theme {
+  --bg-gradient-onyx: linear-gradient(
+    /* avatar box */ to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+      /* what I'm doing */ to bottom right,
+      hsla(240, 1%, 18%, 0.251) 0%,
+      hsla(240, 2%, 11%, 0) 100%
+    ),
+    hsl(240, 2%, 13%);
+  --bg-gradient-yellow-1: linear-gradient(
+    /* apparently idk */ to bottom right,
+    hsl(45, 100%, 71%) 0%,
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+      /* effect before hover */ 135deg,
+      hsla(45, 100%, 71%, 0.251) 0%,
+      hsla(35, 100%, 68%, 0) 59.86%
+    ),
+    hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(
+    /* shadow behind widgets */ to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    /* resume graph line and add on lines */ to right,
+    hsl(45, 100%, 72%),
+    hsl(35, 100%, 68%)
+  );
+
+  /* solid */
+
+  --jet: hsl(0, 0%, 22%); /* card border */
+  --onyx: hsl(240, 1%, 17%); /* data science bg */
+  --eerie-black-1: hsl(240, 2%, 13%); /* widget bg */
+  --eerie-black-2: hsl(240, 2%, 12%); /* card bg */
+  --smoky-black: hsl(0, 0%, 7%); /* card bg bg */
+  --white-1: hsl(0, 0%, 100%); /* data science txt */
+  --white-2: hsl(0, 0%, 98%); /* THE TITLE */
+  --orange-yellow-crayola: hsl(
+    45,
+    100%,
+    72%
+  ); /* widget color and show contact txt */
+  --orange-yellow-crayola1: hsl(45, 100%, 72%); /* navbar word highlight */
+  --vegas-gold: hsl(45, 54%, 58%); /* resume year */
+  --light-gray: hsl(0, 0%, 84%); /* general and navbar text*/
+  --gray-tone: hsla(240, 1%, 17%, 0.75); /* navbar bg */
+  --light-gray-70: hsla(0, 0%, 84%, 0.7); /* TITLES in show contact */
+  --light-gray-71: hsla(0, 0%, 84%, 0.7); /* hover effect */
+  --bittersweet-shimmer: hsl(0, 43%, 51%); /* invalid */
+  --toggle: hsla(0, 0%, 84%, 0.7); /* toggle color */
+  --purple: #ffdb70; /* service icons */
+
+  /**
+   * filter
+   */
+
+  --grayscale: grayscale(1) invert(1);
+  --blur: contrast(0.8);
 }
 
 /*-----------------------------------*\
@@ -492,7 +594,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--gray-tone);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -509,7 +611,7 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--white-1);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
@@ -521,7 +623,7 @@ main {
 }
 
 .navbar-link.active {
-  color: var(--vegas-gold);
+  color: var(--orange-yellow-crayola1);
 }
 
 /*-----------------------------------*\
@@ -1344,6 +1446,16 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 10px);
   }
 
+  #icon {
+    position: absolute;
+    top: -19px;
+    right: 19px;
+    margin: 5px;
+    height: 17px;
+    width: 17px;
+    border-radius: 7px;
+  }
+
   /**
    * #PORTFOLIO, BLOG 
    */
@@ -1377,6 +1489,15 @@ textarea.form-input::-webkit-resizer {
     --fs-8: 12px;
   }
 
+  #icon {
+    position: absolute;
+    top: -35px;
+    right: 87px;
+    margin: 7px;
+    height: 19px;
+    width: 19px;
+    border-radius: 5px;
+  }
   /**
    * #REUSED STYLE
    */
@@ -1687,6 +1808,15 @@ textarea.form-input::-webkit-resizer {
    * REUSED STYLE
    */
 
+  #icon {
+    position: absolute;
+    top: -35px;
+    right: 87px;
+    margin: 7px;
+    height: 19px;
+    width: 19px;
+    border-radius: 5px;
+  }
   .sidebar,
   article {
     width: 700px;
@@ -1803,6 +1933,15 @@ textarea.form-input::-webkit-resizer {
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
   }
 
+  #icon {
+    position: absolute;
+    top: -35px;
+    right: 87px;
+    margin: 7px;
+    height: 19px;
+    width: 19px;
+    border-radius: 5px;
+  }
   /**
    * REUSED STYLE
    */
@@ -1900,6 +2039,15 @@ textarea.form-input::-webkit-resizer {
   /**
    * RESET
    */
+  #icon {
+    position: absolute;
+    top: -50px;
+    right: 80px;
+    margin: 7px;
+    height: 19px;
+    width: 19px;
+    border-radius: 5px;
+  }
 
   body::-webkit-scrollbar {
     width: 20px;
@@ -1967,8 +2115,8 @@ textarea.form-input::-webkit-resizer {
     max-height: 50rem;
     height: 100%;
     margin-bottom: 0;
-    padding-top: 60px;
     z-index: 1;
+    padding-top: 60px;
   }
 
   .sidebar-info {
@@ -2028,4 +2176,40 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
+}
+
+#icon {
+  position: absolute;
+  font-size: 23px;
+  cursor: pointer;
+  padding: 7px;
+  background: var(--border-gradient-onyx);
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+#icon::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+#icon:hover,
+#icon:focus {
+  background: var(--bg-gradient-yellow-1);
+}
+
+#icon:hover::before,
+#icon:focus::before {
+  background: var(--bg-gradient-yellow-2);
 }

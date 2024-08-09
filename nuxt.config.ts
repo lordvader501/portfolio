@@ -16,10 +16,20 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@primevue/nuxt-module', "@nuxt/image", '@nuxtjs/tailwindcss'],
+  modules: [
+    '@primevue/nuxt-module',
+    "@nuxt/image",
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    "@nuxtjs/seo"
+  ],
   vue: {
     compilerOptions: {
       isCustomElement: tag => tag.startsWith('ion-'),
     },
   },
+  robots: {
+    allow: '/',
+    sitemap: 'https://shauryam.vercel.app/sitemap.xml'
+  }
 });

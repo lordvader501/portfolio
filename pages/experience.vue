@@ -4,8 +4,8 @@ useHead({
   title: 'Experience',
 });
 const title = 'Experience';
-const { data: skills } = await useFetch('/api/experiences');
-const skillsList = [...skills.value];
+// const { data: experiences } = await useFetch('/api/experiences');
+// const experienceList = [...experiences.value];
 </script>
 
 <template>
@@ -13,7 +13,7 @@ const skillsList = [...skills.value];
 
     <PageTitle :title="title" />
 
-    <section class="timeline" v-for="item in skillsList" :key="item.id">
+    <section class="timeline" v-for="item in experienceList" :key="item.id">
       <div class="title-wrapper">
         <div class="icon-box">
           <ion-icon :name="item.icon" />

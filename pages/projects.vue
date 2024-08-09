@@ -9,16 +9,16 @@ useHead({
   title: 'Projects',
 });
 const title = "Projects";
-const { data: projects } = await useFetch('/api/projects');
+// const { data: projects } = await useFetch('/api/projects');
 
-const projectList = [...projects.value];
+// const projectList = [...projects.value];
 
 const activeItem = ref({});
 const activeModal = ref(false);
 const activeOverlay = ref(false);
 
 function showItem(id) {
-  activeItem.value = projects.value.find(item => item.id === id);
+  activeItem.value = projectList.find(item => item.id === id);
   activeModal.value = true;
   activeOverlay.value = true;
 }

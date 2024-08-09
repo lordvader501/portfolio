@@ -1,12 +1,21 @@
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage transition />
-    </NuxtLayout>
-  </div>
+  <AppLoadingPage v-show="!loadingPage" />
+  <NuxtLayout>
+    <NuxtPage transition />
+  </NuxtLayout>
 </template>
 <script setup>
+const loadingPage = ref();
 
+onBeforeMount(() => {
+  loadingPage.value = false;
+});
+
+onMounted(() => {
+  setTimeout(() => {
+    loadingPage.value = true;
+  }, 3000);
+});
 </script>
 <style>
 .v-enter-active,
