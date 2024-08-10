@@ -1,8 +1,6 @@
 <script setup>
 let isOpen = ref(false);
 
-const color = useColorMode();
-
 let isdark = ref(false);
 
 onMounted(() => {
@@ -33,10 +31,10 @@ function toggleMenu() {
       <figure class="avatar-box" style="overflow: hidden;">
         <NuxtImg v-if="isdark" src="/images/profile.png"
           alt="Shauryam Dubey"
-          width="80" preload />
+          width="80" height="80" preload sizes="100px" />
         <NuxtImg v-else src="/images/profile-white.png"
           alt="Shauryam Dubey"
-          width="80" preload />
+          width="80" height="80" preload sizes="100px" />
 
       </figure>
 

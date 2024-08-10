@@ -2,12 +2,6 @@
 import PageTitle from "~/components/base/heading/PageTitle";
 useHead({
   title: '',
-  meta: [
-    {
-      name: "google-site-verification",
-      content: "Dj_B1OtbvdxPWtfCNT4riVB__piJyfjqtSzvuczmt2A"
-    }
-  ]
 });
 
 useSeoMeta({
@@ -16,6 +10,7 @@ useSeoMeta({
   description: 'Welcome to Shauryam Dubey’s portfolio. Explore my work, projects, and experience as a software developer.',
   ogDescription: 'Discover the professional journey of Shauryam Dubey, a software developer with expertise in various modern technologies.',
   ogImage: '/images/profile.png',
+  ogSiteName: 'Shauryam Dubey',
   twitterCard: 'summary_large_image',
 });
 
@@ -71,17 +66,17 @@ const aboutMe = [
 </template>
 <style>
 .btn-gold.p-button {
-  background-color: var(--vegas-gold);
+  background-color: var(--orange-yellow-crayola1);
   padding: 5px 20px;
   border-radius: 4px;
   font-weight: 500;
   display: flex;
   gap: 10px;
-  color: rgba(255, 255, 255, 0.869) !important;
+  color: rgba(0, 0, 0, 0.869) !important;
 }
 
 .btn-gold.p-button:hover {
-  background-color: var(--vegas-gold) !important;
+  background-color: var(--orange-yellow-crayola1) !important;
   opacity: 0.8;
 }
 </style>

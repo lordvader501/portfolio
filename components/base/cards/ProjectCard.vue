@@ -18,7 +18,7 @@
           </NuxtLink>
         </div>
 
-        <NuxtImg :src="project.image" :alt="project.title" loading="lazy" />
+        <NuxtImg :src="project.image" :alt="project.title" loading="lazy" sizes="100vw lg:600px" />
       </figure>
 
       <h3 class="project-title">{{ project.title }}</h3>

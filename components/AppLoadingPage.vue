@@ -1,18 +1,21 @@
 <template>
   <div class="h-screen w-full flex items-center justify-center">
     <h2 class="animate">
-      <NuxtImg :src="img" alt="profile" class="w-40" />
+      <NuxtImg preload v-if="isdark" src="/images/profile.png" alt="profile" class="w-40" width="80" height="80"
+        sizes="80px" />
+      <NuxtImg preload v-else src="/images/profile-white.png" alt="profile" class="w-40" width="80" height="80"
+        sizes="80px" />
     </h2>
   </div>
 </template>
 <script setup>
-const img = ref();
+const isdark = ref();
 onMounted(() => {
   if (window.matchMedia("(prefers-color-scheme: dark)")) {
-    img.value = "/images/profile.png";
+    isdark.value = true;
     return;
   }
-  img.value = "/images/profile-white.png";
+  isdark.value = false;
 });
 </script>
 <style scoped>

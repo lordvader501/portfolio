@@ -9,7 +9,7 @@
 
       <div>
         <figure>
-          <img style="width: 100%; aspect-ratio: 5/3;" :src="activeItem.image" class="rounded-lg" :alt="activeItem.title">
+          <NuxtImg style="width: 100%; aspect-ratio: 5/3;" :src="activeItem.image" class="rounded-lg" :alt="activeItem.title" />
         </figure>
       </div>
 
