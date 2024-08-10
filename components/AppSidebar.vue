@@ -80,7 +80,7 @@ function toggleMenu() {
         <li class="contact-item">
           <NuxtLink to="tel:+916203940031" class="flex justify-between w-full contact-link" target="_blank">
             <div class="icon-box">
-              <ion-icon name="mail-outline" />
+              <ion-icon name="call-outline" />
             </div>
 
             <div class="contact-info">
