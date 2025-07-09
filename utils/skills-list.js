@@ -12,6 +12,10 @@ export default [
         icon: "/skills/javascript.svg",
       },
       {
+        name: "Go lang",
+        icon: "/skills/go.svg",
+      },
+      {
         name: "Python",
         icon: "/skills/python.svg",
       },
@@ -20,8 +24,8 @@ export default [
         icon: "/skills/java.svg",
       },
       {
-        name: "Go",
-        icon: "/skills/go.svg",
+        name: "Dart",
+        icon: "/skills/java.svg",
       },
       {
         name: "HTML",
@@ -58,12 +62,24 @@ export default [
         icon: "/skills/vue.svg",
       },
       {
+        name: "Fast API",
+        icon: "/skills/flask.svg",
+      },
+      {
         name: "Django",
         icon: "/skills/django.svg",
       },
       {
         name: "Flask",
         icon: "/skills/flask.svg",
+      },
+      {
+        name: "NodeJS",
+        icon: "/skills/nodejs.svg",
+      },
+      {
+        name: "Flutter",
+        icon: "/skills/nodejs.svg",
       },
       {
         name: "Redux",
@@ -80,10 +96,6 @@ export default [
       {
         name: "Bootstrap",
         icon: "/skills/bootstrap.svg",
-      },
-      {
-        name: "NodeJS",
-        icon: "/skills/nodejs.svg",
       },
     ],
   },
@@ -122,7 +134,7 @@ export default [
         icon: "/skills/git.svg",
       },
       {
-        name: "Gitub",
+        name: "Github",
         icon: "/skills/github.svg",
       },
       {

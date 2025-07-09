@@ -7,6 +7,26 @@ export default [
       {
         name: "BMC Software",
         position: "R&D Intern",
+        duration: "Jan 2025 - July 2025",
+        description: [
+          "Collaboratively developed a web-based Prompt Builder using Angular and Fast API with a dynamic prompt templating system with variable injection and referenced prompt support.",
+          "Enabled users to construct sequential or conditional workflows inside prompt books, resulting in a highly extensible and reusable prompt testing platform that improved productivity and experimentation speed by over 3x.",
+          "Developed a Node.js-based CLI tool using TypeScript to automate the migration of legacy Angular applications. It updated package.json with the latest compatible Angular version, internal UI library, and peer dependencies, resulting in up to 98% reduction in manual upgrade time and ensuring consistency across projects during large-scale version rollouts.",
+        ],
+        skills: [
+          "Angular",
+          "Python",
+          "Node.js",
+          "Fast API",
+          "LLMs",
+          "TypeScript",
+          "Adapt",
+          "SQLite",
+        ],
+      },
+      {
+        name: "BMC Software",
+        position: "R&D Intern",
         duration: "Jan 2024 - Jun 2024",
         description: [
           "Collaboratively developed a chatbot performing 30+ mainframe commands with voice communication, enhancing user interaction by 40%.",
@@ -23,7 +43,6 @@ export default [
           "Adapt",
           "Rexx",
           "Redis",
-          "Jenkins",
           "Mainframe",
         ],
       },

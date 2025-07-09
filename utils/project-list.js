@@ -12,6 +12,53 @@ export default [
   },
   {
     id: 2,
+    title: "Envarfig-go",
+    live_url: "https://pkg.go.dev/github.com/lordvader501/envarfig-go",
+    gh_url: "https://github.com/lordvader501/envargig-go",
+    skills: ["Go"],
+    info: "A golang package that helps in loading environmpent variables into structs.",
+    image: "/images/project-6.png",
+    content:
+      "envarfig-go is a lightweight Go library for managing environment variables with ease. It provides a simple way to load and parse environment variables into Go structs, supporting features like default values, type conversion, and more. Features includes: Load environment variables into Go structs, Support for default values and required fields, Type-safe parsing for common data types (e.g., int, string, bool, uint), Optional .env file loading using godotenv, Customizable settings for environment variable loading, Error handling for invalid or missing environment variables.",
+  },
+  {
+    id: 3,
+    title: "Envsafes",
+    live_url: "",
+    gh_url: "https://github.com/EnvSafes",
+    skills: ["Go"],
+    info: "A cli tool and a web app to manage and share environment variables securely.",
+    image: "/images/project-6.png",
+    content: `## 🔐 EnvSafes – Secure Environment Variable Manager (Golang CLI Tool)
+
+**EnvSafes** is a cross-platform command-line tool built in Golang designed for secure and collaborative environment variable management.
+
+### ✨ Features
+
+- 🛠 **Project-Based Configuration**  
+  Easily initialize and manage environment variable configurations per project.
+
+- 💾 **Secure Local Storage**  
+  Stores sensitive environment variables outside the project directory to prevent accidental exposure.
+
+- ☁️ **Collaborative Remote Access**  
+  Enables teams to securely sync and fetch shared environment variables from a remote backend, streamlining onboarding and eliminating credential delays.
+
+- 🔐 **Built with Security in Mind**  
+  All secrets are encrypted and access-controlled to ensure protection across both local and cloud environments.
+
+### 🧰 Tech Stack
+
+- **Language:** Golang  
+- **Libraries:** Cobra (CLI framework), Viper (config management)  
+- **Storage:** Local encrypted store & Remote backend API  
+- **Security:** AES encryption  
+- **Platforms:** Windows, macOS, Linux
+
+> A productivity and security-focused tool for developers and teams working with environment variables across multiple environments.`,
+  },
+  {
+    id: 4,
     title: "ChatSphere",
     live_url: "",
     gh_url: "https://github.com/lordvader501/chatsphere",
@@ -29,7 +76,7 @@ export default [
       "This group messaging platform, built using Golang and Next.js, offers a seamless communication experience with robust features and secure user authentication via session management. The platform uses WebSockets and Go channels to efficiently handle multiple messages in real-time, ensuring smooth and responsive communication. It leverages Golang's concurrency capabilities and native HTTPS packages to manage API requests. Users can create both public and private chat rooms, where public rooms are open to everyone, and private rooms require an invitation link for access. The platform also includes email validation, password reset functionality, and a history section where users can view all rooms they have created and adjust settings for each, providing a customizable and secure messaging environment.",
   },
   {
-    id: 3,
+    id: 5,
     title: "CodeinBlogs",
     live_url: "https://codeblocks123.pythonanywhere.com/",
     gh_url: "https://github.com/lordvader501/blog-django",
@@ -40,7 +87,7 @@ export default [
       "This Django-based blogging platform is specifically designed for coders, providing a seamless experience for creating, editing, and managing blog content. The platform fosters a strong sense of community by enabling users to view and engage with shared posts. It features a comprehensive user authentication system that ensures secure access, while profile management allows users to personalize their experience. Additionally, the platform incorporates efficient pagination to facilitate easy navigation through extensive content, enhancing both user engagement and overall usability.",
   },
   {
-    id: 4,
+    id: 6,
     title: "Pokelister",
     live_url: "https://test-white--pokelister.netlify.app/",
     gh_url: "https://github.com/lordvader501/pokelister",
@@ -51,7 +98,7 @@ export default [
       "PokeLister is a dynamic web application designed for Pokémon enthusiasts, offering extensive listings and detailed information on all Pokémon species. The application enhances user experience with advanced search capabilities, optimized pagination, and lazy loading for smooth browsing. It also features user authentication via Firebase, allowing users to securely create personalized favorite Pokémon lists, fostering better engagement.",
   },
   {
-    id: 5,
+    id: 7,
     title: "Face Detector",
     live_url: "",
     gh_url: "https://github.com/lordvader501/face-detection-python",

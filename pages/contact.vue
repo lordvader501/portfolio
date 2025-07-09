@@ -18,7 +18,7 @@ useHead({
 
       <form action="https://formsubmit.co/dubeyshauryam@gmail.com" method="POST" class="form" data-form>
         <div class="input-wrapper">
-          <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+          <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
 
           <input
             type="email" name="email" class="form-input" placeholder="Email address" required
@@ -27,7 +27,7 @@ useHead({
 
         <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input />
 
-        <button class="form-btn" type="submit" disabled data-form-btn>
+        <button class="form-btn" type="submit" data-form-btn>
           <ion-icon name="paper-plane" />
           <span>Send Message</span>
         </button>

@@ -41,18 +41,23 @@
           <span>{{ activeItem.info }}</span>
         </small>
 
-        <p class="text-justify">{{activeItem.content}}</p>
+        <!-- <p class="text-justify">{{activeItem.content}}</p> -->
+        <div v-html="renderedMd" class="text-white" />
       </div>
     </section>
   </div>
 </template>
 <script setup>
+import markdownit from 'markdown-it';
 const props = defineProps({
   activeModal: Boolean,
   activeItem: Object,
   activeOverlay: Boolean,
   closeItem: Function
 });
+const md = markdownit();
+
+const renderedMd = computed(() => md.render(props.activeItem?.content || ''));
 </script>
 <style>
 .text-auto-color {
