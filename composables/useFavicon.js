@@ -1,21 +1,16 @@
 export function useFavicon() {
   const updateFavicon = (isDark) => {
     if (process.client) {
-      const favicon = document.querySelector('link[rel="icon"]');
+      const existingIcons = document.querySelectorAll('link[rel="icon"]');
+      existingIcons.forEach((el) => el.parentNode.removeChild(el));
+
+      // Create a new link
+      const favicon = document.createElement("link");
       favicon.rel = "icon";
-      console.log(favicon);
+      favicon.type = "image/png";
+      favicon.href = isDark ? "/favicon-dark.png" : "/favicon-light.png";
 
-      // Set favicon based on theme
-      if (isDark) {
-        favicon.href = "/favicon-dark.png";
-      } else {
-        favicon.href = "/favicon-light.png";
-      }
-
-      // Append to head if it doesn't exist
-      if (!document.querySelector('link[rel="icon"]')) {
-        document.head.appendChild(favicon);
-      }
+      document.head.appendChild(favicon);
     }
   };
 
