@@ -5,9 +5,9 @@ useHead({
     return pageTitle ? `${pageTitle} - Shauryam Dubey` : 'Shauryam Dubey';
   },
   link: [
-    {
-      rel: 'icon', type: 'image/png', href: '/nuxt.png',
-    },
+    // {
+    //   rel: 'icon', type: 'image/png', href: '/favicon-light.png',
+    // },
     {
       rel: 'preconnect',
       href: 'https://fonts.googleapis.com',
@@ -64,7 +64,19 @@ useHead({
     {
       name: "google-site-verification",
       content: "Dj_B1OtbvdxPWtfCNT4riVB__piJyfjqtSzvuczmt2A"
-    }
+    },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Shauryam Dubey - Developer Portfolio' },
+    { name: 'twitter:description', content: 'Full-stack developer, open-source contributor, and lifelong learner.' },
+    { name: 'twitter:image', content: 'https://shauryam.vercel.app/favicon-dark.png' }, // Replace with your actual URL
+    { name: 'twitter:url', content: 'https://shauryam.vercel.app' },
+    { name: 'twitter:site', content: '@ShauryamDubey' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: 'Shauryam Dubey - Developer Portfolio' },
+    { property: 'og:description', content: 'Full-stack developer, open-source contributor, and lifelong learner.' },
+    { property: 'og:image', content: 'https://shauryam.vercel.app/favicon-dark.png' },
+    { property: 'og:url', content: 'https://shauryam.vercel.app' },
+    { property: 'og:site_name', content: 'Shauryam Dubey' },
   ]
 });
 </script>
